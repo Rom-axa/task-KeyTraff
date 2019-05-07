@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/main-style.css">
+    </head>
+    <body>
+        <!--Навигация-->
+        <header>
+            <nav class="nav my-5 justify-content-center">
+                <div class="text-center mx-5 border p-2">
+                    <a class="nav-link" data-query-name="first_query" href="#">страница 1</a>
+                    <button type="button" class="btn btn-link page-info" data-toggle="tooltip" data-html="true" title="<em>Заказы товаров, которые приняли операторы с личным идентификационным кодом 10 или 12 в количество больше двух</em>">
+                        информация о странице
+                    </button>
+                </div>
+                <div class="text-center mx-5 border p-2">
+                    <a class="nav-link" data-query-name="second_query" href="#">страница 2</a>
+                    <button type="button" class="btn btn-link page-info" data-toggle="tooltip" data-html="true" title="<em>Все заказы товаров</em>">
+                        информация о странице
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <!--Главный контент-->
+        <main class="mb-5">
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    <!--Навигация по загруженным страницам-->
+                                    <ul class="nav nav-tabs card-header-tabs uploaded-page-nav">
+                                    </ul>
+                                </div>
+                                <div id="pages-container" class="card-body">
+                                    <!--Загруженные страницы-->
+                                    <div id="page0" class="response-wrapper">
+                                        <h1 class="card-title">Выберите страницу</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <!--Для манипуляции с DOM-элементами-->
+        <script src="js/WWH.js"></script>
+        <!--Обработчики событий-->
+        <script src="js/main.js"></script>
+    </body>
+</html>
